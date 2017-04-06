@@ -54,7 +54,6 @@ class Quiz(BoxLayout):
 
     def start_game(self):
         self.start_time = time.time()
-        self.mark_num = 0
         self.wrong_num = 0
 
     def start_quiz(self):
@@ -63,6 +62,7 @@ class Quiz(BoxLayout):
         if self.status == 'stopped':
             self.status = 'playing'
             self.start_time = time.time()
+            self.mark_num = 0
         # quiz = client.get_quiz()
         quiz = client.get_lol_quiz()
         self.question_str = quiz['question']
