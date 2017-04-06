@@ -1,15 +1,15 @@
-# Python lib requirements:
+### Python lib requirements:
 * kivy
 * kivy.deps.glew
 * kivy.deps.sdl2
 
-# Downloads:
+### Download:
 https://github.com/RawEvan/OQuiz/releases/tag/0.0.1
 
-# Usage:
+### Usage:
 Extract and run main.exe
 
-# Images:
+### Images:
 
 ![image](https://cloud.githubusercontent.com/assets/13704395/24775738/a0541c90-1b50-11e7-8054-b2ecabc6b142.png)
 
