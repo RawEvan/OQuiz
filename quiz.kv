@@ -1,0 +1,48 @@
+#: import randint random.randint
+<Quiz>:
+    title_lay: title_lay
+    question: question
+    selections_lay: selections_lay
+    start_btn: start_btn
+    orientation: 'vertical'
+    padding: (10, 10)
+
+    canvas:
+        Color:
+            rgba: 102, 204, 255, 0.5
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    BoxLayout:
+        id: title_lay
+        size_hint_y: 0.1
+        Label:
+            id: mark
+            font_name: 'msyh.ttc'
+            text: root.info
+        Button:
+            id: start_btn
+            on_release: root.start_quiz()
+            text: 'Start'
+    Label:
+        id: question
+        font_name: 'msyh.ttc'
+        font_size: '15sp'
+        size_hint_y: 0.2
+        size_hint_x: 0.9
+        halign: 'center'
+        valign: 'middle'
+        markup: True
+        shorten: True
+        ellipsis_optiosn: {'color':(1,0.5,0.5,1), 'underline': True}
+        max_lines: 5
+        text: root.question_str
+    GridLayout:
+        cols: 3
+        orientation: 'vertical'
+        id: selections_lay
+
+<Selection>:
+    font_size: '15sp'
+    text: root.selection_str
+    valign: 'middle'
