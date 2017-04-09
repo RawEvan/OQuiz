@@ -4,7 +4,7 @@
 * kivy.deps.sdl2
 
 ### Download:
-https://github.com/RawEvan/OQuiz/releases/tag/0.0.1
+https://github.com/RawEvan/OQuiz/releases
 
 ### Usage:
 Extract and run main.exe
