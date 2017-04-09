@@ -49,6 +49,7 @@ class Client():
             quiz['selections'].append({
                 'string': chmp,
                 'is_answer': False})
+        random.shuffle(quiz['selections'])
         return quiz
 
 

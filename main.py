@@ -19,6 +19,8 @@ client = Client()
 
 
 kivy.resources.resource_add_path("")
+MAX_SEL_TIMES = 1
+
 
 class Selection(Label):
     selection_str = StringProperty(None)
@@ -31,7 +33,7 @@ class Selection(Label):
             if not self.is_answer:
                 self.parent.parent.wrong_num += 1
                 self.selection_str = 'Error'
-                if self.parent.parent.wrong_num >= 3:
+                if self.parent.parent.wrong_num >= MAX_SEL_TIMES:
                     self.parent.parent.finish = True
             else:
                 self.parent.parent.finish = True
