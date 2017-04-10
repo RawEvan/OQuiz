@@ -36,6 +36,7 @@ class Selection(Label):
                 if self.parent.parent.wrong_num >= MAX_SEL_TIMES:
                     self.parent.parent.finish = True
             else:
+                self.parent.parent.mark_num += 1
                 self.parent.parent.finish = True
         else:
             return False
@@ -79,8 +80,6 @@ class Quiz(BoxLayout):
     def judge(self, dt):
         self.set_info()
         if self.finish:
-            # doens't work?
-            self.mark_num += 1
             time.sleep(0.5)
             self.finish = not self.finish
             self.start_quiz()
