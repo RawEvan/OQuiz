@@ -20,4 +20,3 @@ Extract and run main.exe
 
 ![image](https://cloud.githubusercontent.com/assets/13704395/24775811/f506550a-1b50-11e7-9594-6bcf2b27fc32.png)
 
-123123213213123321231321312
